@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Listed Habits</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="logo">
+        <img src="/MyListedHabits/assets/logo.png">
+    </div>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="list-circle-outline"></ion-icon></span>
+                    <span class="text">TO-DO list</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="time-outline"></ion-icon></span>
+                    <span class="text">My Habits</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <div class="hny">
+        <p>
+            <span class="red">HAPPY</span> <span class="blue">NEW</span> <span class="yellow">YEAR</span>
+        </p>
+    </div>
+    <div class="tagline">
+        <p>set new goals with the - to-do list
+            track your habits in the - my habits</p>
+    </div>
+    <div class="footer">
+        <p>©Copyright  2022 | My Listed Habits(MLH)</p>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let list=document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item)=>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item)=>
+        item.addEventListener('click',activeLink))
+    </script>
+</body>
+</html>
