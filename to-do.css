@@ -6,11 +6,13 @@ body {
   }
 h1{
     color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 117px;
     text-shadow: -2px 2px 0 black,
                   2px 2px 0 black,
                   2px -2px 0 black,
                   -2px -2px 0 black;
-    margin-top: 70px;
                   
 }
 .icon-pink{
@@ -18,10 +20,10 @@ h1{
 }
 .container {
     position: absolute;
-    height: 25pc;
+    height: 27pc;
     width: 30pc;
     margin: auto;
-    top: 0;
+    top: 120px;
     right: 0;
     left: 0;
     bottom: 0;
