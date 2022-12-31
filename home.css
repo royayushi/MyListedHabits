@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+.bg{
+    width: 100%;
+    height: 1024px;
+    background: url(https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    mix-blend-mode: hard-light;
+    filter: blur(5px);
+}
+
+.logo img{
+    position: absolute;
+    width: 187.41px;
+    height: 187.41px;
+    left: 41px;
+    top: 42px;
+}
+
+.hny p{
+    position: absolute;
+    width: 1181px;
+    height: 217px;
+    left: 600px;
+    top: 442px;
+
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.72em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+.hny p .red{
+    color: #FF2828;
+}
+.hny p .blue{
+    color: #1557FF;
+}
+.hny p .yellow{
+    color: #FAFF00;
+}
+
+.tagline p{
+    position: absolute;
+    width: 687px;
+    height: 243px;
+    left: 800px;
+    top: 572px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 74px;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+
+    color: #EDEDED;
+}
+
+.footer p{
+    position: absolute;
+    width: 363px;
+    height: 25px;
+    left: 45%;
+    top: 969px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 213px;
+    height: 70px;
+    left: 45%;
+    top: 64px;
+    background: #333;
+    border-radius: 10px;
+}
+.navigation ul{
+    position: relative;
+    display: flex;
+    width: 250px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 75px;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.5);
+}
+.navigation ul li:hover a.icon{
+    color: rgba(255, 255, 255, 1);
+}
+.navigation ul li.active a .icon{
+    transform: translateY(-8px);
+    color: yellow;
+}
+.navigation ul li a .text{
+    position: absolute;
+    opacity: 0; 
+    font-weight: bolder;
+    font-size: 0.3em;
+    color: #222327;
+    transition: 0.5s;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    transform: translateY(0px);
+}
+.navigation ul li.active a .text{
+    transform: translateY(13px);
+    opacity: 1;
+}
+.indicator{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    bottom: 13px;
+    width: 80%;
+    height: 14px;
+    background: yellow;
+    border-radius: 10px;
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 0 0 0 2px yellow,
+    50px 50px yellow,
+    40px 0 yellow,
+    0 40px yellow;
+    transform: rotate(45deg);
+    animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%
+    {
+        transform: rotate(35deg);
+    }
+    50%
+    {
+        transform: rotate(55deg);
+    }
+}
+.navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 2));
+}
