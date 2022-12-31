@@ -1,16 +1,22 @@
+body {
+    background-color: blueviolet;
+  }
 ::selection {
     background: transparent;
   }
+h1{
+    border-bottom: 5px solid black;
+}
 .container {
     position: absolute;
     height: 25pc;
-    width: 20pc;
+    width: 30pc;
     margin: auto;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 55px black;
   }
   .addTxt {
@@ -38,7 +44,7 @@
     outline: none;
     margin: auto;
     top: 15px;
-    right: 65px;
+    right: 68px;
     cursor: pointer;
     font-size: 30px;
   }
