@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+}
+
+.container html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("assets\\htrack-bg.png");
+  background-size: 2000px;
+}
+
+.container {
+  padding: 20px;
+  border-radius: 15px;
+  width: 900px;
+
+  position: relative;
+  margin: auto;
+  top: 260px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 55px black;
+}
+
+h1{
+  color: whitesmoke;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  text-shadow: -2px 2px 0 black,
+                2px 2px 0 black,
+                2px -2px 0 black,
+                -2px -2px 0 black;
+                
+}
+p{
+  font-size: 16px;
+  color: bisque;
+  padding-top: 17px;
+}
+
+cite{
+  
+  color: beige;
+  font-size: 14px;
+}
+
+.habits {
+  text-align: left;
+  list-style: none;
+  
+}
+
+.habits li {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  
+}
+
+.habits label {
+  flex: 1;
+  cursor: pointer;
+  
+}
+
+.habits input {
+  margin-right: 12px;
+  
+}
+
+.habits input {
+  display: none;
+}
+
+.habits input + label:before {
+  content: "+";
+  margin-right: 12px;
+}
+
+.habits input + label span {
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+.habits input:checked + label {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+.habits button {
+  padding-left: 30px;
+  background: none;
+  margin: 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+}
+
+.add-habit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.add-habit input {
+  padding: 10px;
+  margin: 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 100px;
+}
+
+.add-habit select {
+  border-radius: 10px;
+  border: none;
+}
+
+.frequency {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.submit{
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+/* FOOTER */
+
+footer
+{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    margin-top: 600px;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+footer .social_icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu
+{
+    list-style: none;
+}
+footer .social_icon li a
+{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover
+{
+    transform: translate(-10px);
+}
+footer .menu li a
+{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75; 
+}
+footer .menu li a:hover
+{
+    opacity: 1;
+}
+footer p
+{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    Left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("assets\\wave.png");
+    background-size: 1000px 100px;
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5s;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
