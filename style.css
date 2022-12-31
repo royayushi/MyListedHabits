@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: whitesmoke;
+}
+
+.container {
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.habits {
+  text-align: left;
+  list-style: none;
+}
+
+.habits li {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.habits label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.habits input {
+  margin-right: 12px;
+}
+
+.habits input {
+  display: none;
+}
+
+.habits input + label:before {
+  content: "+";
+  margin-right: 12px;
+}
+
+.habits input + label span {
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+.habits input:checked + label {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+.habits button {
+  padding-left: 30px;
+  background: none;
+  margin: 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+}
+
+.add-habit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.add-habit input {
+  padding: 10px;
+  margin: 5px;
+  outline: 0;
+  border: 0;
+  border-radius: 100px;
+}
+
+.add-habit select {
+  border-radius: 10px;
+  border: none;
+}
+
+.frequency {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
