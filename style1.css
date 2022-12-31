@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: x-large;
 }
 
 html {
@@ -36,6 +37,7 @@ h2 {
 .habits {
   text-align: left;
   list-style: none;
+  
 }
 
 .habits li {
@@ -44,15 +46,18 @@ h2 {
   font-weight: 400;
   display: flex;
   align-items: center;
+  
 }
 
 .habits label {
   flex: 1;
   cursor: pointer;
+  
 }
 
 .habits input {
   margin-right: 12px;
+  
 }
 
 .habits input {
