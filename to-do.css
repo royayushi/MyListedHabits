@@ -1,5 +1,6 @@
 body {
-    background-color: blueviolet;
+    background: url("assets\\todo-bg.png");
+    background-size: 1500px;
     min-height: 100vh;
   }
 ::selection {
