@@ -8,8 +8,34 @@
     <title>Habit Tracker</title>
   </head>
   <body>
-    <div></div>
-    <div></div>
+    <div class="logo">
+      <img src="/assets/logo.png">
+    </div>
+    
+    <div class="navigation">
+      <ul>
+          <li class="list">
+              <a href="/home.html">
+                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="text">Home</span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="/to-do.html">
+                  <span class="icon"><ion-icon name="list-circle-outline"></ion-icon></span>
+                  <span class="text">TO-DO list</span>
+              </a>
+          </li>
+          <li class="list active">
+              <a href="#">
+                  <span class="icon"><ion-icon name="time-outline"></ion-icon></span>
+                  <span class="text">My Habits</span>
+              </a>
+          </li>
+          <div class="indicator"></div>
+      </ul>
+  </div>
+
     <div class="container">
       <h1 class="display-5 text-center">Your Habits!</h2>
       <blockquote class="blockquote text-center">
@@ -71,7 +97,7 @@
           <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
       </ul>
       <ul class="menu">
-          <li><a href="#">Home</a></li>
+          <li><a href="/home.html">Home</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">About</a></li>
       </ul>
@@ -81,6 +107,16 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+    let list=document.querySelectorAll('.list');
+    function activeLink(){
+        list.forEach((item)=>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item)=>
+    item.addEventListener('click',activeLink))
+</script>
     
   </body>
 </html>
