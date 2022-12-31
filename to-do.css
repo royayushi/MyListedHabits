@@ -5,7 +5,13 @@ body {
     background: transparent;
   }
 h1{
-    border-bottom: 5px solid black;
+    color: whitesmoke;
+    text-shadow: -2px 2px 0 black,
+                  2px 2px 0 black,
+                  2px -2px 0 black,
+                  -2px -2px 0 black;
+    margin-top: 70px;
+                  
 }
 .icon-pink{
     color: palevioletred;
