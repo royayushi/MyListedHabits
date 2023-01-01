@@ -1,5 +1,18 @@
-# MyListedHabits
+<h1 align="center">MyListedHabits</h1>
 Project for Hacky New Year Hackathon
+
+![Screenshot 2023-01-01 130425](https://user-images.githubusercontent.com/102523492/210166471-4aff9e19-57e7-4f21-9140-b3329e67d7d1.png)
+
+## Try out : https://mylistedhabits.co/
+
+## Techstack Used-
+- HTML5
+- CSS
+- JAVASCRIPT
+
+## Code-editor:
+- VsCode
+
 ## Inspiration
 Resolutions are a part of New Year. However, many of us make the resolutions in our head, and then forget about them. So, we decided to make a webapp that will help us to save our resolutions, and track our habits.
 ## What it does
